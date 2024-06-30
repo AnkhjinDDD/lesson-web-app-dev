@@ -1,0 +1,253 @@
+/* Бүгдийг нь дотрох болон гаднах зайгүй болгох */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Арын өнгийг сонгож өгөх */
+body {
+  background-color: white;
+  width: 100%;
+}
+/* Нүүр хэсгийн гарчигийг хар өнгөтэй болгож голлуулаад доороо гадна зай авах  */
+h1 {
+  color: black;
+  margin-top: 20px;
+}
+/* Нүүр хэсгийн гарчигний доор байрших тайлбар текстыг голлуулаад дээрээ зайгүй
+болгож доороо зайтай болгох */
+#nikeDesc {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* header хэсгийг дэлгэцийн дээд хэсэгт тогтмол байрлуулах */
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* FLEX ээ ашиглаад MENU гээ янзлах */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+/* header хэсгийг тогтмол байршил өгхөд бусад нь
+доор нь орж харагдах учир дээрээс нь дотор талдаа зай авна */
+main {
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+/* Баруун талд байрлах icon -ууддаа хэмжээ, зайг нь тохируулна. */
+.icons {
+  height: auto;
+  width: 25px;
+  margin-right: 10px;
+}
+/* icon -уудаа хийсэн "div" тагынхаа баруун талаас жоохон зай авсан нь. */
+#iconBox {
+  margin-right: 20px;
+}
+
+/* MENU хэсгийн арыг цагаан өнгөтэй болгож доторх байгаа юмнуудыг голлуулах */
+nav {
+  text-align: center;
+  padding: 1rem;
+  /* width: 100%; */
+  height: 28px;
+  /* Доторх холбоосуудыг босоогоороо дунд нь оруулахын тулд
+  flex ээ ашиглана */
+  display: flex;
+  align-items: center;
+}
+/* Nike ийн логондоо хэмжээг нь заах */
+#nikeLogo {
+  width: 100px;
+  height: 45px;
+  object-fit: cover;
+  margin-left: 30px;
+}
+/* MENU хэсгийн холбоосуудыг хар өнгөтэй болгож, доорх зураасгүй 
+болгоод зайг нь тааруулах */
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Нүүр хэсэгт харагдах зурагны хэмжээг тохируулах */
+#nikeImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+h2 {
+  margin: 20px;
+}
+
+span {
+  display: block;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Зурагнуудад хэмжээ заах */
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+p {
+  margin: 20px;
+}
+
+h3 {
+  margin: 20px;
+}
+
+li {
+  margin: 20px;
+}
+
+footer {
+  background-color: hsl(229, 38%, 40%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#card-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-link {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+
+.card-link img {
+  width: 100%;
+  height: auto;
+}
+
+.card-link-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-align: left;
+}
+
+#card-links p,
+#card-links h2 {
+  color: white;
+}
+
+.catalogSection {
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.catalogSection h1 {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.catalog {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.sneakers {
+  background-color: #f6f6f6;
+  width: 22%;
+  padding: 10px 0;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sneakers img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sneakers h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px 13px;
+  display: inline-block;
+}
+
+.button p {
+  color: white;
+  margin: 0;
+}
+
+.membershipSection {
+  width: 100%;
+  text-align: left;
+}
+
+.membershipSection h1 {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.membership {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.membershipItem {
+  width: 27%;
+  position: relative;
+  margin-right: 20px;
+}
+
+.membershipItem img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.membershipDesc {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+}
+
+#button1 {
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px 13px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#button1 p {
+  color: black;
+  margin: 0;
+}
